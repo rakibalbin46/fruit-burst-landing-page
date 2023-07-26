@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div
+          class="navbar my-8 p-4 bg-[#F85559] text-white rounded-full flex-row-reverse sm:flex-row justify-between gap-20 sm:gap-0"
+        >
+          <div class="">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F85559] rounded-box relative right-4 md:left-4 w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[18px] font-medium">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <img src="images/logo.png" class="w-9 md:w-12" alt="" />
+            <a
+              class="btn btn-ghost capitalize text-2xl sm:text-3xl md:4xl font-bold"
+              >Fruit Burst</a
+            >
+          </div>
+
+          <div class="navbar-end">
+            <input
+              type="text"
+              placeholder="Search "
+              class="input input-bordered w-80 rounded-full invisible sm:visible"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 relative right-10 text-gray-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      <!-- -------Hero Section-------------->
+      <div>
+        <div class="carousel w-full brightness-50 relative">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/banner1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/banner2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/banner3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./images/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center space-y-2 relative bottom-40 md:bottom-[300px] lg:bottom-[400px] items-center text-white w-max mx-auto"
+        >
+          <h1 class="text-xl sm:text-7xl font-extrabold">
+            Exotic tastes at your<br />
+            doorstep
+          </h1>
+          <p class="text-[12px] md:text-[20px] font-medium">
+            We supply highly quality organic products
+          </p>
+          <button
+            class="rounded-md bg-[#F85559] text-white text-[12px] font-semibold sm:text-[16px] p-2 sm:p-4"
+          >
+            Shop Now
+          </button>
+        </div>
+        <div
+          class="card bg-base-100 shadow-xl grid grid-cols-5 mt-16 invisible md:visible relative md:bottom-[330px] lg:bottom-[420px] items-center mx-6"
+        >
+          <div>
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-gray-500">Strawberry</h2>
+            </div>
+          </div>
+          <div>
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit2.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-gray-500">Orange</h2>
+            </div>
+          </div>
+          <div>
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit3.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-gray-500">Mango</h2>
+            </div>
+          </div>
+          <div>
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit4.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-gray-500">Strawberry</h2>
+            </div>
+          </div>
+          <div>
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit4.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-gray-500">Mango</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
